@@ -1,0 +1,91 @@
+.section-gender-profile {
+    padding-top: 30px;
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        display: inline-block;
+        max-width: 260px;
+        font-size: 30px;
+        line-height: 33px;
+    }
+}
+
+.section-gender-selection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    &__wrapper-img {
+        display: flex;
+        width: 263px;
+    }
+    &__gender-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .choose-your-gender {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__title {
+            text-align: center;
+        }
+        &__gender {
+            display: flex;
+            margin: 20px -25px -25px -25px;
+            .gender-button {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 140px;
+                height: 140px;
+                margin: 25px;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                &__text {
+                    margin-top: 10px;
+                    color: #fff;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    width: 170px;
+                    height: 170px;
+                    opacity: 0.5;
+                    -webkit-animation: signal 2.5s infinite;
+                    animation: signal 2.5s infinite;
+                    border-radius: 50%;
+                }
+                @keyframes signal {
+                    0% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.1);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+            }
+            .gender-button.man {
+                background: linear-gradient(180deg, #91e7da 0%, #2da2d7 100%);
+                &::before {
+                    background-color: #91e7da;
+                }
+            }
+            .gender-button.woman {
+                background: linear-gradient(180deg, #ef888c 0%, #cf47c6 100%);
+                &::before {
+                    background-color: #ef888c;
+                }
+            }
+        }
+    }
+}
