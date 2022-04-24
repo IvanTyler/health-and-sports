@@ -3,12 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FloorComponent } from './floor/floor.component';
+import { FloorMainComponent } from './floor/floor-main/floor-main.component';
+import { FloorGoalComponent } from './floor/floor-main/sub-components/floor-goal/floor-goal.component';
+import { FloorProfileSelectedComponent } from './floor/floor-main/sub-components/floor-profile-selected/floor-profile-selected.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FloorComponent
+    FloorMainComponent,
+    FloorGoalComponent,
+    FloorProfileSelectedComponent,
   ],
   imports: [
     BrowserModule,

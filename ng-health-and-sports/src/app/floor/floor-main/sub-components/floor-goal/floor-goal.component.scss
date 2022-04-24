@@ -1,0 +1,71 @@
+.section-floor-goal {
+    &__title {
+        text-align: center;
+        font-size: 21px;
+        line-height: 1.4;
+        font-weight: 300;
+    }
+    &__sub-title {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    &__container-target {
+        margin: 0 auto;
+        max-width: 550px;
+        padding: 37px 40px 40px;
+        margin-top: 50px;
+        background-color: #fcfcfc;
+        box-shadow: 0 11px 20px rgb(220 228 226 / 60%);
+    }
+
+    .choosing-goal-improve-body {
+        margin-top: 20px;
+        &__item {
+            margin-top: 20px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            border: 1px solid #e7e7e7;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+            transition: 0.5s;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            &:hover {
+                background-color: #eafffc;
+            }
+            &:active {
+                background-color: #7dc7a7;
+                border-color: #7dc7a7;
+                box-shadow: 0px 4px 12px rgb(70 158 136 / 60%);
+                .choosing-goal-title,
+                .choosing-goal-short-description {
+                    color: #fff;
+                }
+            }
+        }
+        &__img {
+            margin-right: 15px;
+        }
+        &__text {
+            font-size: 16px;
+            .choosing-goal-title {
+                line-height: 1.5;
+                color: #222222;
+                font-weight: 500;
+            }
+            .choosing-goal-short-description {
+                line-height: 1.125;
+                color: #9e9e9e;
+                font-weight: 500;
+            }
+        }
+    }
+}
